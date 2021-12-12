@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>
+        Login
+    </title>
+
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    <b> <a href="Project.html"> QUOTES & AFORISMS </a></b>
+                </h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li> <a href="Project.html#lifetbl">Life </a> </li>
+                    <li> | </li>
+                    <li> <a href="Project.html#lovetbl">Love </a> </li>
+                    <li> | </li>
+                    <li> <a href="Project.html#inspirationaltbl"> Inspirational </a> </li>
+                    <li> | </li>
+                    <li> <a href="Project.html#humortbl">Humor </a> </li>
+                </ul>
+            </div>
+
+            <div class="log-sign">
+                <ul class="log-sign-ul">
+                    <li><a href="login.html"> Log in </a></li>
+                    <li> | </li>
+                    <li><a href="Register.html"> Sign up </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="login">
+            <h2>Login Form </h2>
+        </div>
+
+        <div class="form">
+            <form name="login" onsubmit="return validateForm()">
+                <b>Username</b>
+                <input type="text" placeholder="Enter Username" name="username">
+
+                <b>Password</b>
+                <input type="password" placeholder="Enter Password" name="pass">
+
+                <input type="submit" value="Login" class="button">
+
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var usr = document.forms["login"]["username"].value;
+            var pas = document.forms["login"]["pass"].value;
+
+            if ((usr == null || usr == "") && (pas == null || pas == "")) {
+                alert("Ju lutem plotesoni fushat!");
+                return false;
+            } else if (usr == null || usr == "") {
+                alert("Ju lutem vendosni 'Username'-in!");
+                return false;
+            } else if (pas == null || pas == "") {
+                alert("Ju lutem vendosni 'Password'-in!");
+                return false;
+            } else {
+                 jhjiujih hjh alert("Te dhenat tuaja u moren me sukses!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
